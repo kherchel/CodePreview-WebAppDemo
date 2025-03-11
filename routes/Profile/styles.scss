@@ -1,0 +1,89 @@
+.profile-section {
+  .header-right-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .generic-button {
+      margin-left: 20px;
+      width: 90px;
+    }
+  }
+
+  .section {
+    background: #0A0707;
+    border-radius: 20px;
+    padding: 40px;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+
+      .label {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-right: 20px;
+      }
+
+      .value {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .subtitle {
+    margin-top: 20px;
+    /* TODO: Fix this stuff in the SectionHeader component itself */
+  }
+
+  .under-title {
+    display: flex;
+    flex-direction: row;
+
+    .tag {
+      background: #211E1E;
+      border-radius: 40px;
+      padding: 3.5px 16.5px;
+      margin-right: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      user-select: none;
+      cursor: pointer;
+      transition: all 0.05s ease-in;
+
+      &:active {
+        transform: translateY(3px);
+      }
+
+      span {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+
+      img {
+        margin-left: 5px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}

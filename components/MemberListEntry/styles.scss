@@ -1,0 +1,112 @@
+.member-list-entry {
+  display: flex;
+  background-color: #171414;
+
+  &:nth-child(2n) {
+    background-color: #0A0707;
+    .member-list-entry-inner {
+      background-color: #171414;
+    }
+  }
+
+  &:last-child {
+    background-color: transparent;
+  }
+
+  .member-list-entry-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #0A0707;
+    padding: 28px 40px;
+    overflow:hidden;
+
+    .actions {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .member-icon {
+      background: #282525;
+      border-radius: 10px;
+      width: 52px;
+      height: 52px;
+      margin-right: 23px;
+      cursor: pointer;
+      transition: transform 0.05s ease-in-out;
+
+      &:active {
+        transform: translateY(3px);
+      }
+    }
+
+    .info-box {
+      flex: 1;
+      justify-content: space-between;
+
+      .member-name {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 26px;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+
+      .member-info {
+        display: flex;
+        flex-direction: row;
+
+        .tag {
+          margin: 0 5.25px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          background: #211E1E;
+          border-radius: 40px;
+          padding: 3px 16px;
+          position: relative;
+
+          .remove-tag {
+            position: absolute;
+            right: -5px;
+            top: 0;
+            width: 14px;
+            height: 14px;
+            background: #E72313;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+          }
+        }
+
+        .platform {
+          /* TEMPORARY PLATFORM REPRESENTATION */
+          margin: 0 5.25px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          background: #211E1E;
+          border-radius: 40px;
+          padding: 3px 16px;
+        }
+      }
+    }
+  }
+}

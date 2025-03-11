@@ -1,0 +1,26 @@
+.image-upload-preview {
+  width: 119px;
+  height: 119px;
+  background: #282525;
+  border-radius: 10px;
+  margin-right: 40px;
+  position: relative;
+  background-size: cover;
+  outline: 3px dashed transparent;
+
+  &.drag {
+    outline: 3px dashed #E72313;
+  }
+
+  .icon {
+    position: absolute;
+    right: -16px;
+    bottom: -16px;
+    cursor: pointer;
+    transition: all 0.05s ease-in-out;  
+
+    &:active {
+      transform: translateY(3px);
+    }
+  }
+}

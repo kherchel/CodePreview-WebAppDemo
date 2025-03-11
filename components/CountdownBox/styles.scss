@@ -1,0 +1,59 @@
+.countdown-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #ffffff44;
+  border-radius: 20px;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+
+  .header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // flex-wrap: wrap;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #e72313;
+      border-radius: 10px;
+      margin: 0 5px;
+      user-select: none;
+      margin-bottom: 15px;
+
+      .value {
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        color: #fff;
+        // letter-spacing: 0.1em;
+        padding: 5px 0;
+      }
+
+      .label {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: 0.1em;
+        background: #00000022;
+        width: 60px;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  }
+}

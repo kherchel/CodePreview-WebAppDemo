@@ -1,0 +1,52 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  
+  .check {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #E72313;
+    margin-left: 10px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.05s ease-in;
+    cursor: pointer;
+
+    &.checked {
+      background-color: #E72313;
+    }
+  }
+
+  .label {
+    font-family: 'Poppins', sans-serif;
+    a {
+      color: #E72313;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+
+  &.circle {
+    .check {
+      border-radius: 50%;
+      border-color: #4F4F4F;
+
+      .check-inner {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+
+      &.checked {
+        background-color: transparent;
+        .check-inner {
+          background-color: #E72313;
+        }
+      }
+    }
+  }
+}

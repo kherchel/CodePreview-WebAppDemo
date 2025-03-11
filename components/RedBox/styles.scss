@@ -1,0 +1,45 @@
+.red-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: linear-gradient(180deg, #0A070700 0%, #0A070700 16px, #0A0707FF 17px, #0A0707FF 50%, #00000000 50.01%);
+
+  .red-box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #E72313;
+    border-radius: 20px;
+    padding: 8px 9px;
+    min-height: 54px;
+
+    @media screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+
+    &.narrower {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &.centered {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .red-box-title, .red-box-subtitle {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 32px;
+      padding: 0 36px;
+    }
+
+    .red-box-title {
+      flex: 1;
+    }
+  }
+}

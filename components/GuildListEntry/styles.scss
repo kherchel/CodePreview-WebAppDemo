@@ -1,0 +1,220 @@
+.guild-list-entry {
+  display: flex;
+  background-color: #171414;
+
+  &:nth-child(2n) {
+    background-color: #0A0707;
+    .guild-list-entry-inner {
+      background-color: #171414;
+    }
+  }
+
+  &:last-child {
+    background-color: transparent;
+  }
+
+  .guild-list-entry-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #0A0707;
+    padding: 28px 40px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .guild-vote-box-mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-self: stretch;
+
+      .left {
+        display: flex;  
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .description {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+
+      .votes {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+      }
+    }
+
+    .guild-vote-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 203px;
+      align-self: stretch;
+      position: relative;
+      margin-right: -40px;
+
+      .separator {
+        position: absolute;
+        top: -28px;
+        left: 0;
+        height: calc(100% + 56px);
+        width: 1.5px;
+        background: #FFFFFF;
+        opacity: 0.05;
+      }
+
+      .description {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+
+      .votes {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+      }
+    }
+
+    .mobile-platforms {
+      display: flex;
+      flex-direction: row;
+      padding-top: 10px;
+
+      .platform {
+        margin-right: 10px;
+      }
+    }
+
+    .mobile-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+      .guild-description {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+        opacity: 0.4;
+        -webkit-line-clamp: 2; /* number of lines to show */
+        line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        padding-right: 40px;
+        overflow: hidden;
+        @media screen and (max-width: 1200px) {
+          margin: 20px 0;
+          padding-right: 0;
+          -webkit-line-clamp: 4; /* number of lines to show */
+          line-clamp: 4;
+        }
+      }
+    }
+
+
+    .ranking {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 45px;
+      text-align: center;
+      color: #FFFFFF;
+      padding-right: 40px;
+      width: 40px;
+      @media screen and (max-width: 1200px) {
+        width: 30px;
+        padding-right: 30px;
+      }
+    }
+
+    .guild-icon {
+      background: #282525;
+      border-radius: 10px;
+      width: 119px;
+      height: 119px;
+      margin-right: 40px;
+      cursor: pointer;
+      object-fit: cover;
+
+      @media screen and (max-width: 1200px) {
+        width: 67px;
+        height: 67px;
+        margin-right: 14px;
+      }
+    }
+
+    .info-box {
+      flex: 1;
+      justify-content: space-between;
+
+      .guild-name {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+
+      .guild-info {
+        display: flex;
+        flex-direction: row;
+        margin: 9.5px 0;
+
+        .tag {
+          margin: 0 5.25px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          background: #211E1E;
+          border-radius: 40px;
+          padding: 3px 16px;
+        }
+
+        .platform {
+          margin: 0 10px;
+        }
+      }
+
+  }
+}

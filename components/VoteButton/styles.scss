@@ -1,0 +1,38 @@
+.vote-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: #E7231366;
+  outline: 1px solid #E7231366;
+  padding: 7.5px 0;
+  width: 99px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.05s ease-in;
+
+  &.voted {
+    background-color: transparent;
+    cursor: default;
+  }
+
+  &:active:not(.voted) {
+    background-color: transparent;
+    transform: translateY(3px);
+  }
+
+  .icon {
+    margin-right: 9.5px;
+  }
+
+  .label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}

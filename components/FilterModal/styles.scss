@@ -1,0 +1,97 @@
+.filter-modal-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #000000CC;
+  backdrop-filter: blur(5px);
+  z-index: 10;
+
+  .filter-modal {
+    background: #0A0707;
+    box-shadow: 0px 0px 100px rgba(231, 35, 19, 0.5);
+    border-radius: 20px;
+    padding: 57px;
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+        .generic-button {
+          min-width: 100px;
+          margin: 0 10px;
+        }
+      }
+
+      .f-label {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 15px;
+        &.margined {
+          margin-top: 15px;
+        }
+      }
+      
+      .platforms {
+        display: flex;
+        flex-direction: row;
+
+        @media screen and (max-width: 1200px) {
+          flex-direction: column;
+        }
+
+        .platform {
+          margin-left: 30px;
+          &:first-child {
+            margin-left: 0;
+          }
+          @media screen and (max-width: 1200px) {
+            margin-left: 0;
+          }
+
+          .label {
+            margin-bottom: 0;
+          }
+
+          .checkbox {
+            .checkbox-label {
+              height: 40px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+
+              .platform-icon {
+                margin-right: 10px;
+              }
+            }
+          }
+
+          &.disabled {
+            .checkbox-label {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

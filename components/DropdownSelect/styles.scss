@@ -1,0 +1,29 @@
+.react-dropdown-select.lexo-dropdown {
+  background: transparent;
+  border: 1px solid #4F4F4F;
+  border-radius: 20px;
+  padding: 16px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+
+  .react-dropdown-select-dropdown {
+    background: black;
+    border: 1px solid #4F4F4F;
+    border-radius: 20px;
+  }
+
+  .react-dropdown-select-item {
+    border: none;
+    padding: 10px 20px;
+  }
+
+  .react-dropdown-select-input {
+    color: #fff;
+    font-size: 18px;
+  }
+}
